@@ -16,6 +16,14 @@ background-repeat: no-repeat;
 background-position: center center; 
 } 
 
+footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
     </style>
     <body background="img/Fondo3.jpg">
         <noscript>
@@ -23,8 +31,10 @@ background-position: center center;
         </noscript>
         
 
-        <nav class="navbar navbar-inverse" role="navigation">
+        <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
+            
   <div class="container-fluid">
+     
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -44,14 +54,14 @@ background-position: center center;
           <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b><span class="glyphicon glyphicon-wrench"></span> Servicios</b><span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Web</a></li>
-            <li><a href="#">Desktop</a></li>
-            <li><a href="#">Apps</a></li>
+            <li><a href="web.html">Web</a></li>
+            <li><a href="escritorio.html">Desktop</a></li>
+            <li><a href="moviles.html">Apps</a></li>
           </ul>
         </li>
         </li>
         <li><a href="nosotros.html"><b><span class="glyphicon glyphicon-user"></span> Nosotros</b><span class="sr-only">(current)</span></a></li>
-        <li><a href="#"><b><span class="glyphicon glyphicon-envelope"></span> Contacto</b><span class="sr-only">(current)</span></a></li>
+        <li><a href="contacto.html"><b><span class="glyphicon glyphicon-envelope"></span> Contacto</b><span class="sr-only">(current)</span></a></li>
       </ul>
       <form class="navbar-form navbar-right">
         
@@ -67,7 +77,10 @@ background-position: center center;
   </div><!-- /.container-fluid -->
 </nav>
     
-
+ <br>
+            <br>
+            <br>
+            <br>
 <div class="container">
 <!-- Carousel -->
     	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -110,29 +123,29 @@ background-position: center center;
   <div class="panel-body">
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
         
-        <img src="img/Mision.jpg" width="90%" height="30%">
+        <img src="img/Mision.png" width="90%" height="25%">
         <br>
         <br>
         <center>
         <button type="button" class="btn btn-primary" align="center" onClick="abrirModalMision()">
             <span class="glyphicon glyphicon-star"></span>&nbsp;
             <b>Misi&oacute;n</b>
-        </button>
+        </button><br><br>
         </center>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-        <img src="img/Vision.jpg" width="90%" height="30%">
+        <img src="img/Vision.png" width="90%" height="25%">
         <br>
         <br>
         <center>
         <button type="button" class="btn btn-primary" align="center" onClick="abrirModalVision()">
             <span class="glyphicon glyphicon-eye-open"></span>&nbsp;
             <b>Visi&oacute;n</b>
-        </button>
+        </button><br><br>
         </center>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-        <img src="img/Valores.jpg" width="90%" height="30%">
+        <img src="img/Valores.png" width="90%" height="25%">
         <br>
         <br>
         <center>
@@ -143,11 +156,11 @@ background-position: center center;
         </center>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-        <img src="img/Valores.jpg" width="90%" height="30%">
+        <img src="img/politicas.png" width="90%" height="25%">
         <br>
         <br>
         <center>
-        <button type="button" class="btn btn-primary" align="center" onClick="abrirModalValores()">
+        <button type="button" class="btn btn-primary" align="center" onClick="abrirModalPoliticas()">
             <span class="glyphicon glyphicon-book"></span>&nbsp;
             <b>Pol&iacute;ticas</b>
         </button>
@@ -158,15 +171,51 @@ background-position: center center;
     <br>
     <br>
 </div>
-    <div class="panel panel-default">
-  <div class="panel-heading" align="center"><h3><b>Encu&eacute;ntranos en...</b></h3></div>
-  <div class="panel-body">
-    Mapa
-  </div>
+    
+<div class="container">
+    <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-star"></span><b> Proyectos Populares</b>
+                    </div>
+                    <div class="panel-body">
+                           <div class="list-group">
+                               <a class="list-group-item list-group-item-info" onclick="alert('Un reporteador de Datos permite al usuario organizar la informaci&oacute;n almacenada en una base de datos para desplegarla en forma de gr&aacute;ficas, reportes, tablas, etc con el fin de facilitar los estudios estad&iacute;sticos de los datos. Pongase en contacto con Mustach Technologies para ordenar un reporteador a la medida de sus necesidades.')">Reporteador de Datos</a>
+                                <a class="list-group-item list-group-item-info" onclick="alert('Un Punto de Venta permite al usuario gestionar el proceso de ventas de un establecimiento comercial, generar facturas y capturar en una base de datos cada uno de los movimientos, as&iacute; como los cortes de caja y la generaci&oacute;n de reportes. Pongase en contacto con Mustach Technologies para ordenar un punto de venta a la medida de sus necesidades.')">Punto de Venta</a>
+                               <a class="list-group-item list-group-item-info" onclick="alert('Un Control de Inventarios permite al usuario organizar los art&iacute;culos que tiene en almac&eacute;n, generar reportes de inversi&oacute;n y controlar el acceso a la informaci&oacute;n de la base de datos. P&oacute;ngase en contacto con Mustach Technologies para ordenar un Control de Inventarios a la medida de sus necesidades.')">Control de Inventarios</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-thumbs-up"></span><b> Redes Sociales</b>
+                    </div>
+                    <div class="panel-body">
+                           <div class="list-group">
+                               <a href="#" class="list-group-item list-group-item-info"><img src="img/face.png" width="20px" height="20px"> &nbsp;&nbsp;Facebook</a>
+                                <a href="#" class="list-group-item list-group-item-info"><img src="img/Twitter.png" width="20px" height="20px"> &nbsp;&nbsp;Twitter</a>
+                               <a href="#" class="list-group-item list-group-item-info"><img src="img/whatsapp.png" width="20px" height="20px"> &nbsp;&nbsp;WhatsApp</a>                               
+                               <a href="#" class="list-group-item list-group-item-info"><img src="img/youtube.png" width="20px" height="20px"> &nbsp;&nbsp;YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-screenshot"></span><b> Encu&eacute;ntranos en...</b>
+                    </div>
+                    <div class="panel-body">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.9284116848976!2d-101.33433898550071!3d20.753695486148082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842c7e285c000001%3A0xd4b48f3d1de7fa35!2sInstituto+Tecnol%C3%B3gico+Superior+de+Irapuato!5e0!3m2!1ses!2smx!4v1491099724370" width="100%" height="70%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="panel-footer">
+                        <span class="glyphicon glyphicon-map-marker"></span><b> Carretera Irapuato - Silao km 12.5, El Copal, 36821 Irapuato, Gto.</b>
+                    </div>
+                </div>
+            </div>
     </div>
-<br>
-<br>
-
+</div>
 
         <div class="modal fade" id="CMision" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
              <div class="modal-dialog">
@@ -192,6 +241,18 @@ background-position: center center;
             </div>
         </div>
     
+        <div class="modal fade" id="CPoliticas" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog">
+                <div class="modal-content" id="ModalPoliticas">
+                    
+                </div>
+            </div>
+        </div>
+    
+<footer>
+    <p align="center" style="color:white">Soluciones Inform&aacute;ticas a su medida<br>Ll&aacute;manos: (462) 69696969</p>
+</footer>
+    
         <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
     
@@ -210,11 +271,17 @@ background-position: center center;
                 $("#CValores").modal("show");
                 $("#ModalValores").load("valores.html");
             }
+        
+            function abrirModalPoliticas(){
+                $("#CPoliticas").modal("show");
+                $("#ModalPoliticas").load("politicas.html");
+            }
             
             function cerrarModal(){
                 $("#CMision").modal("hide");
                 $("#CVision").modal("hide");
                 $("#CValores").modal("hide");
+                $("#CPoliticas").modal("hide");
             }
         </script>
     </body>

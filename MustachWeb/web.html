@@ -5,6 +5,7 @@
              content ="width=device-width, initial-scale=1">
        <link href="css/bootstrap.min.css" rel="stylesheet">
        <link rel="stylesheet" href="css/carrusel.css" type="text/css">
+       <link rel="stylesheet" href="css/estilo.css" type="text/css">
        
     </head> 
     <style type="text/css"> 
@@ -46,7 +47,7 @@ footer {
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="index.html"><b><span class="glyphicon glyphicon-home"></span> Inicio</b><span class="sr-only">(current)</span></a></li>
+        <li><a href="index.html"><b><span class="glyphicon glyphicon-home"></span> Incio</b><span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
           <li class="dropdown active">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b><span class="glyphicon glyphicon-wrench"></span> Servicios</b><span class="caret"></span></a>
@@ -59,6 +60,42 @@ footer {
         </li>
         <li><a href="nosotros.html"><b><span class="glyphicon glyphicon-user"></span> Nosotros</b><span class="sr-only">(current)</span></a></li>
         <li><a href="contacto.html"><b><span class="glyphicon glyphicon-envelope"></span> Contacto</b><span class="sr-only">(current)</span></a></li>
+        
+                <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b><span class="glyphicon glyphicon-log-in"></span>&nbsp; Iniciar Sesi&oacute;n</b> <span class="caret"></span></a>
+			<ul id="login-dp" class="dropdown-menu">
+				<li>
+					 <div class="row">
+							<div class="col-md-12">
+								 <form class="form" role="form" method="post" accept-charset="UTF-8" id="login-nav">
+										<div class="form-group">
+											 <label>Nombre de Usuario:</label><br>
+                                                <div class="input-group">
+                                                <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
+                                                <input type="text" class="form-control" placeholder="Ingrese su Nombre de Usuario" aria-describedby="basic-addon1">
+                                                </div>
+										</div>
+										<div class="form-group">
+											 <label>Contrase&ntilde;a:</label><br>
+                                                <div class="input-group">
+                                                <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock"></span></span>
+                                                <input type="password" class="form-control" placeholder="Ingrese su Contrase&ntilde;a" aria-describedby="basic-addon1">
+                                                </div>
+                                             <div class="help-block text-right"><a href="">Has olvidado la Contrsae&ntilde;a?</a></div>
+										</div>
+										<div class="form-group">
+											 <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+										</div>
+								 </form>
+							</div>
+							<div class="bottom text-center">
+								<b>Bienvenido!!</b>
+							</div>
+					 </div>
+				</li>
+			</ul>
+        </li>
+        
       </ul>
       <form class="navbar-form navbar-right">
         
